@@ -118,7 +118,9 @@ export const EditablePreview = forwardRef<EditablePreviewProps, "span">(
           ...styles.preview,
         }}
         className={_className}
-      />
+      >
+        {props.children}
+      </chakra.span>
     )
   },
 )
